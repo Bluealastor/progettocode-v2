@@ -27,7 +27,7 @@ In questo semplice esempio:
 
 La prima riga <!DOCTYPE html> dichiara il documento come pagina HTML.
 L'elemento <html> è l'elemento radice di una pagina web HTML.
-L'elemento <head> contiene metadati sulla pagina, come il titolo definito da <title>.
+L'elemento <head> contiene metadati sulla pagina, come il titolo definito da <title>. e all'interno i dati sono bloccanti
 L'elemento <body> contiene il contenuto principale della pagina web visualizzato nel browser.
 Elementi come <h1>, <p>, e <img> definiscono rispettivamente titoli, paragrafi e immagini.
 Perché è importante l'HTML?

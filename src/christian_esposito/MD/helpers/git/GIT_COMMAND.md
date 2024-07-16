@@ -93,6 +93,13 @@ Puoi eliminare un ramo dopo averlo integrato con successo o se non è più neces
 - git rebase nomeBranchPrincipale
   - serve per aggiornare una seconda branch con la branch principale
 
+- git rebase --abort
+  - annulla le modifiche e ritorna allo stato iniziale
+
+- git rebase --skip
+  - annulla skippa le modifiche
+
+
 ## annullare i commit
 
 - git reset codice hash
@@ -103,15 +110,24 @@ Puoi eliminare un ramo dopo averlo integrato con successo o se non è più neces
 
   - resetta il progetto all' ultimo commit sul locale
 
-  - git reset --soft
+- git reset --soft
   - è utilizzato per modificare la cronologia dei commit di Git in modo sicuro, spostando il puntatore HEAD (che indica l'ultimo commit) a un commit precedente, senza eliminare alcun dato
 
-  - git checkout --[ file ]
+- git reset [nome file] 
+  - toglie un file dal tracked (da verde a rosso)
+
+- git checkout --[ file ]
   - Il comando git checkout con un argomento file opzionale serve a ripristinare un file o una directory specifica dal repository Git nella tua working directory. In pratica, consente di annullare le modifiche apportate a un file o di recuperare una versione precedente.
+
+
 
 ## verifica differenze in locale o con il remote
 
 - git diff nomeFile
+
+  - Mostra le differenze tra le modifiche non ancora registrate e la versione più recente nel repository.
+
+- git diff nomeBranch
 
   - Mostra le differenze tra le modifiche non ancora registrate e la versione più recente nel repository.
 
@@ -131,7 +147,7 @@ Dopo aver sviluppato una funzionalità in un ramo separato, puoi integrare le mo
 
 - git stash
 
-  - git stash è un comando di Git prezioso che consente di temporaneamente accantonare le modifiche non committate nella tua working directory. Immagina di dover cambiare rapidamente attività o di voler provare qualcosa di sperimentale con il tuo codice, ma non vuoi ancora effettuare un commit delle modifiche in corso. In questi scenari
+  - git stash è un comando di Git prezioso che consente di temporaneamente accantonare le modifiche non committate(rosse) nella tua working directory. Immagina di dover cambiare rapidamente attività o di voler provare qualcosa di sperimentale con il tuo codice, ma non vuoi ancora effettuare un commit delle modifiche in corso. In questi scenari
 
 - git stash upplay
 
